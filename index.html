@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Adopta</title>
@@ -53,22 +54,22 @@
               <div class="carousel-item active">
                 <img src="./asset/img/pet_shelter_banner.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
+                  <h5>Adopta</h5>
+                  <p>"Los animales hablan, pero solo para aquellas personas que saben escuchar".</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="./asset/img/img_adopta_banner_2_v2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
+                  <h5 class="text-dark">Ámalos</h5>
+                  <p class="text-dark">"Para comprar un animal solo se necesita dinero. Para adoptar un animal solo se necesita corazón".</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="./asset/img/img_adopta_banner_3.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5 class="text-dark">Regala un hogar</h5>
+                  <p class="text-dark">"Un perro es la única cosa en la tierra que te quiere más de lo que se quiere a sí mismo".</p>
                 </div>
               </div>
             </div>
@@ -84,7 +85,8 @@
     </header>
 
     <main class="d-flex flex-wrap gap-1 justify-content-around">
-        <div class="caja__tienda col-12 col-md-12 col-lg-5 col-xl-3 ">
+
+        <div class="caja__tienda col-12 col-md-12 col-lg-5 col-xl-3 " data-aos="fade-right">
             <a href="./productos.html" class="link__caja"></a>
 
             <div><img  class="img__tienda img-fluid" src="./asset/img/img_pet_store_v2.jpg" alt=""></div>            
@@ -101,7 +103,7 @@
             
         </div>
 
-        <div class="caja__adopta col-12 col-md-12 col-lg-5 col-xl-3">
+        <div class="caja__adopta col-12 col-md-12 col-lg-5 col-xl-3" data-aos="fade-left">
                 <a href="./adopta.html" class="link__caja"></a>
                 <div><img  class="img__adopta img-fluid" src="./asset/img/img_adopta_pet_v2.png" alt=""></div>                
             
@@ -115,7 +117,7 @@
             </div>
         </div>
 
-        <div class="caja__chart col-12 col-md-12 col-lg-5 col-xl-3">
+        <div class="caja__chart col-12 col-md-12 col-lg-5 col-xl-3" data-aos="flip-up">
             <a href="https://www.uc.cl/noticias/veterinaria-uc-existen-12-millones-de-perros-y-gatos-con-duenos-en-chile-y-4-millones-sin-ellos/" class="link__caja"></a> 
             <div><img class="img__chart img-fluid" src="./asset/img/img_chart_pet_v2.png" alt=""></div> 
             
@@ -127,7 +129,7 @@
 
         </div>
 
-        <div class="caja__donate col-12 col-md-12 col-lg-5 col-xl-3">
+        <div class="caja__donate col-12 col-md-12 col-lg-5 col-xl-3" data-aos="fade-right">
             <a href="./donaciones.html" class="link__caja"></a>
             <div><img class="img__donate img-fluid" src="./asset/img/pet_donate_grid.png" alt=""></div>
             
@@ -139,7 +141,7 @@
 
         </div>
 
-        <div class="caja__somos col-12 col-md-12 col-lg-5 col-xl-3  ">
+        <div class="caja__somos col-12 col-md-12 col-lg-5 col-xl-3  " data-aos="flip-down">
             <div class="somos__texto mt-2 ">
                 <h4 >¿Quienes somos?</h4>
                 <p>
@@ -151,7 +153,7 @@
             </div>
         </div>
 
-        <div class="caja__faq col-12 col-md-12 col-lg-5 col-xl-3 ">
+        <div class="caja__faq col-12 col-md-12 col-lg-5 col-xl-3 " data-aos="fade-left">
           <a href="./faq.html" class="link__caja"></a>
           <div><img class="img__faq img-fluid" src="./asset/img/img_faq_pet.jpg" alt=""></div>
           
@@ -238,11 +240,7 @@
         <div class="row d-flex justify-content-center">
           <div class="col-lg-8">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-              distinctio earum repellat quaerat voluptatibus placeat nam,
-              commodi optio pariatur est quia magnam eum harum corrupti
-              dicta, aliquam sequi voluptate quas.
-            </p>
+              "Hasta que no hayas amado a un animal, una parte de tu alma permanecerá dormida", Anatole France.
           </div>
         </div>
       </section>
@@ -291,5 +289,14 @@
 <!-- End of .container -->
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+ 
+
+<!-- Libreria AOS animaciones -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
 </body>
 </html>
