@@ -1,204 +1,183 @@
+@charset "UTF-8";
 /** RESETEO**/
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 
 /** link y letras dentro de cada cuadrilla**/
-
 .link__caja {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
 }
+
 /** centrado de letras caja tienda**/
-
-  .caja__tienda {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    margin-top: 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    
-
+.caja__tienda {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-.caja__tienda--texto {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    padding: 10px;
-    
+.caja__tienda .caja__tienda--texto {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
 }
+
 /** centrado de letras caja adopta**/
-  .caja__adopta {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    margin-top: 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+.caja__adopta {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-  .caja__adopta--texto {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    padding: 10px;
+.caja__adopta .caja__adopta--texto {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
 }
+
 /** centrado de letras caja chart**/
-
 .caja__chart {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    margin-top: 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-.caja__chart--texto {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    padding: 10px;
-    
+.caja__chart .caja__chart--texto {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
 }
-/** centrado de letras caja donate**/
 
+/** centrado de letras caja donate**/
 .caja__donate {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    margin-top: 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-.caja__donate--texto {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    padding: 10px;
+.caja__donate .caja__donate--texto {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
 }
 
 /** centrado de letras caja faq**/
-
 .caja__faq {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    margin-top: 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-.caja__faq--texto {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    padding: 10px;
+.caja__faq .caja__faq--texto {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
 }
 
 /** CAJA SOMOS**/
-
 .caja__somos {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: #ffffff;
 }
-
-.somos__texto {
-    padding-left: 2%;
-    padding-right: 2%;
+.caja__somos .somos__texto {
+  padding-left: 2%;
+  padding-right: 2%;
 }
-
-.caja__somos h4 {
-   
-    border-bottom: 3px solid #5B48D0;
-    
-    
-    
+.caja__somos .somos__texto h4 {
+  border-bottom: 3px solid #5B48D0;
 }
 
 /** clase necesaria para el centrado de letras en la caja**/
-  .centrado {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.centrado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/** media necesario para re-ordenado de cajas en cierto tamaño de pantalla**/
+@media (min-width: 1200px) {
+  .caja__tienda {
+    order: 1;
+  }
+
+  .caja__adopta {
+    order: 3;
+  }
+
+  .caja__chart {
+    order: 2;
+  }
+
+  .caja__donate {
+    order: 4;
+  }
+
+  .caja__somos {
+    order: 5;
+  }
+
+  .caja__faq {
+    order: 6;
+  }
+}
+/** clase requerida para el borde especial arco iris para el encabezado de ceirtas paginas**/
+.textoAdopta {
+  width: 80%;
+  box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+}
+
+/** Linea transparente requerida en ceirtas paginas para mejorar el visual de las mismas (esto va entre el navbar y el main en algunas paginas **/
+.linea {
+  width: 100%;
+  height: 50px;
+}
+
+/** sombras para diferentes tipos de cards dentro de la apgina, no aplica para todas**/
+.card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+/** Estilo de caja especial para la zona de indicadores**/
+.textoInfo {
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+/** estilos de as monedas botones**/
+.coin__shadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 10%;
+}
+.coin__shadow .coin {
+  width: 200px;
 }
 
 /** clase necesaria para el responsive del Iframe MAPA**/
-.map-responsive{
-
-    overflow:hidden;
-
-    padding-bottom:56.25%;
-
-    position:relative;
-
-    height:0;
-
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
 }
-
-.map-responsive iframe{
-
-    left:0;
-
-    top:0;
-
-    height:100%;
-
-    width:100%;
-
-    position:absolute;
-
-}
-
-
-@media (min-width: 1200px) {
-
-    .caja__tienda {
-        order: 1;
-    }
-    .caja__adopta {
-        order: 3;
-    }
-    .caja__chart {
-        order: 2;
-    }
-    .caja__donate {
-        order: 4;
-    }
-    .caja__somos {
-        order: 5;
-    }
-    .caja__faq {
-        order: 6;
-    }
-
-   
-}
-
-.textoAdopta {
-    width: 80%;
-    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
-
-}
-
-.linea {
-    width: 100%;
-    height: 50px;
-    
-}
-
-.card {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
-
-.coin {
-    width: 200px;
-}
-
-.coin__shadow {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    border-radius: 10%;
-}
-
-.textoInfo {
-    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+.map-responsive .map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
