@@ -79,12 +79,15 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
     .caja__faq--texto {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        padding: 10px;
+        position: map-get($caja , posicion );
+        top: map-get($caja , arriba);
+        left: map-get($caja , izquierda);
+        padding: map-get($caja , padd);
     }
+
+    
 }
+
 
 
 /** CAJA SOMOS**/

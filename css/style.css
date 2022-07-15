@@ -14,6 +14,69 @@
   z-index: 10;
 }
 
+/** clase necesaria para el centrado de letras en la caja**/
+.centrado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/** media necesario para re-ordenado de cajas en cierto tamaño de pantalla**/
+@media (min-width: 1200px) {
+  .caja__tienda {
+    order: 1;
+  }
+  .caja__adopta {
+    order: 3;
+  }
+  .caja__chart {
+    order: 2;
+  }
+  .caja__donate {
+    order: 4;
+  }
+  .caja__somos {
+    order: 5;
+  }
+  .caja__faq {
+    order: 6;
+  }
+}
+/** clase requerida para el borde especial arco iris para el encabezado de ceirtas paginas**/
+.textoAdopta {
+  width: 80%;
+  box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+}
+
+/** Linea transparente requerida en ceirtas paginas para mejorar el visual de las mismas (esto va entre el navbar y el main en algunas paginas **/
+.linea {
+  width: 100%;
+  height: 50px;
+}
+
+/** sombras para diferentes tipos de cards dentro de la apgina, no aplica para todas**/
+.card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+/** Estilo de caja especial para la zona de indicadores**/
+.textoInfo {
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.btn-primario {
+  background-color: #106cfc;
+}
+
+.btn-secundario {
+  background-color: #f4f4f4;
+}
+
+.btn-terciario {
+  background-color: #456743;
+}
+
 /** centrado de letras caja tienda**/
 .caja__tienda {
   position: relative;
@@ -102,62 +165,6 @@
   border-bottom: 3px solid #5B48D0;
 }
 
-/** clase necesaria para el centrado de letras en la caja**/
-.centrado {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/** media necesario para re-ordenado de cajas en cierto tamaño de pantalla**/
-@media (min-width: 1200px) {
-  .caja__tienda {
-    order: 1;
-  }
-
-  .caja__adopta {
-    order: 3;
-  }
-
-  .caja__chart {
-    order: 2;
-  }
-
-  .caja__donate {
-    order: 4;
-  }
-
-  .caja__somos {
-    order: 5;
-  }
-
-  .caja__faq {
-    order: 6;
-  }
-}
-/** clase requerida para el borde especial arco iris para el encabezado de ceirtas paginas**/
-.textoAdopta {
-  width: 80%;
-  box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
-}
-
-/** Linea transparente requerida en ceirtas paginas para mejorar el visual de las mismas (esto va entre el navbar y el main en algunas paginas **/
-.linea {
-  width: 100%;
-  height: 50px;
-}
-
-/** sombras para diferentes tipos de cards dentro de la apgina, no aplica para todas**/
-.card {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
-
-/** Estilo de caja especial para la zona de indicadores**/
-.textoInfo {
-  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
-}
-
 /** estilos de as monedas botones**/
 .coin__shadow {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -180,4 +187,31 @@
   height: 100%;
   width: 100%;
   position: absolute;
+}
+
+.myButton, .btn-primario, .btn-secundario, .btn-terciario {
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+  background-color: #ededed;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #777777;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+
+.myButton:hover, .btn-primario:hover, .btn-secundario:hover, .btn-terciario:hover {
+  background: linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+  background-color: #dfdfdf;
+}
+
+.myButton:active, .btn-primario:active, .btn-secundario:active, .btn-terciario:active {
+  position: relative;
+  top: 1px;
 }

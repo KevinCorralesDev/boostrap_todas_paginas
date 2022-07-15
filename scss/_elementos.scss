@@ -39,12 +39,18 @@
 
 }
 
+@mixin separador($ancho, $alto) {
+
+    width: $ancho;
+    height: $alto;
+
+}
+
 /** Linea transparente requerida en ceirtas paginas para mejorar el visual de las mismas (esto va entre el navbar y el main en algunas paginas **/
 
 .linea {
-    width: 100%;
-    height: 50px;
-    
+
+    @include separador(100%, 50px );
 }
 
 /** sombras para diferentes tipos de cards dentro de la apgina, no aplica para todas**/
@@ -57,4 +63,27 @@
 .textoInfo {
     box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 }
+
+$colores: (
+    primario:#106cfc ,
+    secundario:#f4f4f4,
+    terciario: #456743,
+);
+
+@each $key, $var in $colores {
+    
+    .btn-#{$key}{
+        @extend .myButton;
+        background-color: $var;
+    }
+
+}
+
+$caja: (
+    posicion: absolute,
+    arriba: 10px,
+    izquierda: 10px,
+    padd: 10px,
+);
+
 
